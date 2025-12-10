@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crecimiento de plantas</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="script.js" defer> </script>
+    
+</head>
+<body >
+    <header id = "Inicio">
+        <nav class = "navbar">
+            <h1>Huerto del CBTis 14</h1>
+            <ul class = "nav-links">
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href = #Crecimiento>Crecimiento</a></li>
+                <li><a href = "#Predicción">Predicción</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <br><br><br><br> <br>
+    <div class = "cuadro">
+        <h2>La elaboración de un huerto dentro de las instalaciones está pensado para que 
+            los alumnos puedan acceder a una alimentación balanceada, que puedan consumir alimentos 
+            frescos y puedan aprender conceptos de jardinería. Para ello, se pensó en una página que 
+            calcule el crecimiento y etapa de las plantas según la temperatura diaria y el tipo de 
+            planta, para posteriormente hacer diferentes pedicciones.</h2>
+    </div>
+    <img src = "huerto1.jpg" style = "position: absolute; top: 180px; left: 650px; background: none; width: 50%;" >
+    <br> <h2  id = "Crecimiento"></h2><br><br>
+    <h1 >Crecimiento y etapa de las plantas según la temperatura</h1>
+    <img id="imagen" src = "planta.jpeg" style = "position: absolute; top : 700px; left: 800px;">
+    <h2>Para empezar, captura los siguientes datos sobre el día</h2>
+    <h3 id = "Día">Día 1</h3>
+    <div>
+        <h3 id = "tmax">Temperatura máxima registrada </h3>
+        <input type = number id = "Tmax" class="limpio">
+        <h3 id = "tmin">Temperatura mínima registrada</h3>
+        <input type = number id = "Tmin" class="limpio"> 
+    </div>
+    <br><br><br><br>
+    <h2>Selecciona el tipo de planta del que quieres conocer su etapa de crecimiento</h2>
+    <select id = "Planta">
+        <option value = "tomate">Tomate</option>
+        <option value = "lechuga">Lechuga</option>
+        <option value = "zanahoria">Zanahoria</option>
+        <option value = "pimiento">Pimiento</option>
+        <option value = "girasol">Girasol</option>
+    </select>
+    <h2 id = "Predicción"></h2>
+    <br> <br>
+    <button onclick = "Calcular()">Calcular etapa de crecimiento</button>
+    <button onclick="Borrar()">Borrar registro</button>
+    <h1 id = "predicción">Predicción del tiempo de cosecha según los datos anteriormente recolectados</h1>
+    <h2 style = "position: absolute; top: 1280px; left: 30px;">Se recolectaron datos de un(a): </h2>
+    <h3 id = "planta"></h3>  
+    <h2 style = "position: absolute; top: 1280px; left: 650px;">En el primer mes, está en etapa de: </h2>
+    <h3 id = "etapa"></h3>
+    <h2 style="position: absolute; top: 1600px; left: 30px;">Tiene un total de: </h2>
+    <h3 id = "gdd"></h3>
+    <h2 style = "position: absolute; top: 1600px; left: 650px;" id = "F1"></h2>
+    <h3 id = "tiempo"></h3>
+    <h2 style="position: absolute; top: 1700px; left: 450px;" id = "F2"></h2>
+    <h3 id = "time"></h3>
+    <h3 style="position: absolute; top: 1900px; left : 1px;">Con estas predicciones, se puede hacer un aproximado de la fecha de cultivo para prevenirse
+        sobre las diferentes etapas o estaciones del año, para saber si habrá más lluvias o plagas.
+    </h3>
+    
+    
+</body>
+</html>

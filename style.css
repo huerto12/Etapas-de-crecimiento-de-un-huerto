@@ -1,0 +1,154 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    background-image: url("pepe.jpg");
+    height: 100%;
+    background-color: #3e9742;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position:center;
+    min-height: 100vh;
+}
+.navbar{
+    background-color: rgb(40, 85, 83);
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 98%; 
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgb(5, 20, 53);
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.nav-links a:hover{
+    background-color: rgb(34, 62, 114);
+}
+.cuadro{
+    position: relative;
+    left: 20px;
+    top: 0px;
+    width: 600px;
+    padding: 10px;
+    border: 1px solid;
+    background-color: rgb(10, 36, 36);
+    opacity: 70%;
+}
+
+h1{
+    color:rgb(255, 255, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+h2{
+    color:rgb(255, 255, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+h3{
+    color:rgb(236, 243, 237);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+select {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 15px;
+    color: #444;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+#planta{
+    position:absolute;
+    top: 1320px;
+    left: 150px;
+}
+#etapa{
+    position: absolute;
+    top: 1320px;
+    left:800px;
+}
+#gdd{
+    position: absolute;
+    top: 1650px;
+    left:150px;
+
+}
+#tiempo{
+    position: absolute;
+    top: 1650px;
+    left: 800px;
+}
+#time{
+    position: absolute;
+    top: 1750px;
+    left: 350px;
+}
+
+img{
+    width: 20%;
+    height: auto;
+}
+.relleno{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100;
+    height: 1%;
+    background-color: rgb(7, 7, 6);
+    transition: height 0.5 ease-in-out;
+    z-index: -1;
+
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: blanchedalmond;
+    background-color: rgb(169, 218, 201);
+    color: black;
+}
+#Planta:hover {
+    border-color: #2e7d32;
+    background-color: #e8f5e9;
+}
+
+
+#Planta option {
+    padding: 6px;
+    background-color: #fff;
+    color: #333;
+}
+
+
+#Planta option:checked {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
